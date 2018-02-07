@@ -8,6 +8,9 @@ namespace HttpPostExceptionTest.Controllers
         
         
         [HttpGet("error")]
+        [HttpPost("error")]
+        [HttpDelete("error")]
+        [HttpOptions("error")]
         public IActionResult Index()
         {
             return StatusCode(500,"Hello, World! From debug controller");
